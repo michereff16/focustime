@@ -6,7 +6,7 @@ import { FocusHistory } from './src/features/focus/FocusHistory';
 import { Timer } from './src/features/timer/Timer';
 import { colors } from './src/utils/colors';
 import { spacing } from './src/utils/sizes';
-
+//testar
 const STATUSES = {
   COMPLETE: 1,
   CANCELLED: 2,
