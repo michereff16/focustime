@@ -7,6 +7,7 @@ import { Timer } from './src/features/timer/Timer';
 import { colors } from './src/utils/colors';
 import { spacing } from './src/utils/sizes';
 //testar
+//commit
 const STATUSES = {
   COMPLETE: 1,
   CANCELLED: 2,
