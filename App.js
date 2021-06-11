@@ -6,7 +6,7 @@ import { FocusHistory } from './src/features/focus/FocusHistory';
 import { Timer } from './src/features/timer/Timer';
 import { colors } from './src/utils/colors';
 import { spacing } from './src/utils/sizes';
-  //ululululu
+
 const STATUSES = {
   COMPLETE: 1,
   CANCELLED: 2,
@@ -16,7 +16,10 @@ export default function App() {
   const [focusHistory, setFocusHistory] = useState([]);
 
   const addFocusHistorySubjectWithStatus = (subject, status) => {
-    setFocusHistory([...focusHistory, { key: String(focusHistory.lenght + 1), subject, status }]);
+    setFocusHistory([
+      ...focusHistory,
+      { key: String(focusHistory.lenght + 1), subject, status },
+    ]);
   };
 
   const onClear = () => {
@@ -45,7 +48,7 @@ export default function App() {
 
   useEffect(() => {
     loadFocusHistory();
-  }, [])
+  }, []);
 
   useEffect(() => {
     saveFocusHistory();
